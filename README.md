@@ -21,6 +21,10 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
 ``` 
 * Add **base.Register(container);** code line to your service registration class **Register** method as shown in below code snippet, and inherite the service registration class using **BaseServiceRegistration** class which lives in **Era.UnityServiceInitiator** namespace.
 ```     
+using Era.UnityServiceInitiator;
+
+namespace Test
+{
     public class ServiceRegistration : BaseServiceRegistration
     {
         public override void Register(IUnityContainer container)
@@ -30,9 +34,14 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
             container.RegisterType<IService, Service>();
         }
     }
+}
 ```
 * Finally create a new instance of **ServiceInitiator** class which lives in **Era.UnityServiceInitiator** namespace and use **GetService** generic method followed with your service class that you want use as shown in below code snippet.
-```     
+```   
+using Era.UnityServiceInitiator;
+
+namespace Test
+{
     public class SampleClass
     {
         private IService _service;
@@ -42,6 +51,7 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
             _service = new ServiceInitiator().GetService<IService>();
         }
     }
+ }
 ```
 
 ## Built With
