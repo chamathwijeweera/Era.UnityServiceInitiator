@@ -62,7 +62,7 @@ namespace Test
 
 ## Authors
 
-* **Chamath Wijeweera** - [ChamathWijeweera](https://github.com/chamathwijeweera)
+* [ChamathWijeweera](https://github.com/chamathwijeweera)
 
 
 ## License
