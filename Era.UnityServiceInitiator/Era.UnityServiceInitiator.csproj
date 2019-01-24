@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Chamath Wijeweera</Authors>
+    <Company>Era Inc</Company>
+    <PackageLicenseUrl />
+    <RepositoryUrl>https://github.com/chamathwijeweera/Era.UnityServiceInitiator</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
