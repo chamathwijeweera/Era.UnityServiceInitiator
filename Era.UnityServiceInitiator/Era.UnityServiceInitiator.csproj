@@ -6,7 +6,10 @@
     <Company>Era Inc</Company>
     <PackageLicenseUrl />
     <RepositoryUrl>https://github.com/chamathwijeweera/Era.UnityServiceInitiator</RepositoryUrl>
-    <Description>Microsoft Unity ioc container preconfigured library for dependency injection control for any net application</Description>
+    <Description>Microsoft Unity ioc container preconfigured library for dependency injection control for any .net application that follows .net standard</Description>
+    <PackageProjectUrl>https://github.com/chamathwijeweera/Era.UnityServiceInitiator</PackageProjectUrl>
+    <PackageTags>Microsoft Unity ioc container preconfigured library for dependency injection control</PackageTags>
+    <PackageReleaseNotes>Microsoft Unity ioc container preconfigured library for dependency injection control for any .net application that follows .net standard</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
