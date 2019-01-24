@@ -18,9 +18,8 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
     Type registration format - Fully qualified namespace to class, Assembly name
 
     <add key="UnityRegistrationAssemblyType" value="General.Test.ServiceRegistration, General.Test" />
-```
-* Inherite service registration class using **BaseServiceRegistration** class which lives in **Era.UnityServiceInitiator** namespace. 
-* Add **base.Register(container);** code line to your service registration class **Register** method as shown in below code snippet.
+``` 
+* Add **base.Register(container);** code line to your service registration class **Register** method as shown in below code snippet, and inherite the service registration class using **BaseServiceRegistration** class which lives in **Era.UnityServiceInitiator** namespace.
 ```     
     public class ServiceRegistration : BaseServiceRegistration
     {
