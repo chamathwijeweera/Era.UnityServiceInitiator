@@ -20,7 +20,7 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
     <add key="UnityRegistrationAssemblyType" value="General.Test.ServiceRegistration, General.Test" />
 ```
 * Inherite service registration class using **BaseServiceRegistration** class which lives in **Era.UnityServiceInitiator** namespace. 
-* Add **base.Register(container);** code line to your service registration class **Register** method as shown below example snippet.
+* Add **base.Register(container);** code line to your service registration class **Register** method as shown below example snippet and you are good go.
 ```     
     public class ServiceRegistration : BaseServiceRegistration
     {
