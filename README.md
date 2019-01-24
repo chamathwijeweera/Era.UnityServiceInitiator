@@ -15,7 +15,7 @@ Install-Package Era.UnityServiceInitiator -Version 1.0.0
 * Install the package using Nuget package manager or Package Manager Console.
 * Add the application key to the app.config or web.config to add assembly type where the service registration is done. This should be complies the following format and example is given below.
 ```
-	Type registration format - **Fully qualified namespace to class, Assembly name**
+    Type registration format - Fully qualified namespace to class, Assembly name
 
     <add key="UnityRegistrationAssemblyType" value="General.Test.ServiceRegistration, General.Test" />
 ```
