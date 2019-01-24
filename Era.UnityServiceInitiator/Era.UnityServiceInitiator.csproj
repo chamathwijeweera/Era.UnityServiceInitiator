@@ -6,6 +6,7 @@
     <Company>Era Inc</Company>
     <PackageLicenseUrl />
     <RepositoryUrl>https://github.com/chamathwijeweera/Era.UnityServiceInitiator</RepositoryUrl>
+    <Description>Microsoft Unity ioc container preconfigured library for dependency injection control for any net application</Description>
   </PropertyGroup>
 
   <ItemGroup>
