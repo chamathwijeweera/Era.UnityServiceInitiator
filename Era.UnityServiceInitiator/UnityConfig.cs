@@ -20,24 +20,18 @@ namespace Era.UnityServiceInitiator
 
         public static void RegisterTypes(IUnityContainer container)
         {
-            try
-            {
-                string assembly = ConfigurationManager.AppSettings["UnityRegistrationAssemblyType"];
+            string assembly = ConfigurationManager.AppSettings["UnityRegistrationAssemblyType"];
 
-                if (string.IsNullOrWhiteSpace(assembly))
-                    throw new Exception("Provide a class with fully qualified name including dependency registration");
+            if (string.IsNullOrWhiteSpace(assembly))
+                throw new Exception("Provide fully qualified name of the class which contains the dependency registration");
 
-                var assemblyQualifiedName = Type.GetType(assembly).AssemblyQualifiedName;
+            var assemblyQualifiedName = Type.GetType(assembly).AssemblyQualifiedName;
 
-                Type UnityRegistrationModule = Type.GetType(assemblyQualifiedName);
+            Type UnityRegistrationModule = Type.GetType(assemblyQualifiedName);
 
-                var module = (IContainerRegistrationModule<IUnityContainer>)Activator.CreateInstance(UnityRegistrationModule);
-                module.Register(container);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            var module = (IContainerRegistrationModule<IUnityContainer>)Activator.CreateInstance(UnityRegistrationModule);
+
+            module.Register(container);
         }
     }
 }
