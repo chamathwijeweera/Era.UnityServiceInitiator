@@ -9,7 +9,7 @@ namespace Era.UnityServiceInitiator
 
         protected override T Get<T>(IUnityContainer container)
         {
-            return this.Container.Resolve<T>();
+            return Container.Resolve<T>();
         }
     }
 }
