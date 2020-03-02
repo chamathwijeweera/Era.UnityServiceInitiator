@@ -10,13 +10,13 @@
     <PackageProjectUrl>https://github.com/chamathwijeweera/Era.UnityServiceInitiator</PackageProjectUrl>
     <PackageTags>Microsoft Unity ioc container preconfigured library for dependency injection control</PackageTags>
     <PackageReleaseNotes>Microsoft Unity ioc container preconfigured library for dependency injection control for any .net application that follows .net standard</PackageReleaseNotes>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
-    <PackageReference Include="Unity" Version="5.11.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="Unity" Version="5.11.4" />
   </ItemGroup>
 
 </Project>
